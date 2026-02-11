@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bd65ad5643.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <title>Previsão do Tempo</title>
+</head>
+<body>
+    <div id="container">
+        <form id="search">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="search" name="city-name" id="city_input" placeholder="Buscar cidade">
+            
+            <button type="submit" id="search_btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button type="button" id="mic_btn">
+                <i class="fa-solid fa-microphone"></i>
+            </button>
+        </form>
+
+        <div id="weather">
+            <h1 id="title">Rio de Janeiro, BR</h1>
+
+            <div id="infos">
+                <div id="temp">
+                    <img id="temp_img" src="./img/nuvem01.png" alt="Condição do tempo">
+                    <div>
+                        <p id="temp_value">33<span>°C</span></p>
+                        <p id="temp_description">Ensolarado</p>
+                    </div>
+                </div>
+
+                <div id="other_infos">
+                    <div class="info_item">
+                        <i class="fa-solid fa-temperature-arrow-up"></i>
+                        <div> 
+                            <h2>Máx</h2>
+                            <p id="temp_max">35°C</p>
+                        </div>
+                    </div>
+
+                    <div class="info_item">
+                        <i class="fa-solid fa-temperature-arrow-down"></i>
+                        <div>
+                            <h2>Mín</h2>
+                            <p id="temp_min">23°C</p>
+                        </div>
+                    </div>
+
+                    <div class="info_item">
+                        <span class="material-symbols-outlined">humidity_indoor</span>
+                        <div>
+                            <h2>Umidade</h2>
+                            <p id="humidity">70%</p>
+                        </div>
+                    </div>
+
+                    <div class="info_item">
+                        <i class="fa-solid fa-wind"></i>
+                        <div>
+                            <h2>Vento</h2>
+                            <p id="wind">18 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="alert"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>

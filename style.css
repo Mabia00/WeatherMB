@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(https://loremflickr.com/1600/900/nature,landscape);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+#container {
+    background-color: rgba(240, 248, 255, 0.95);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 380px;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #bdbdbd;
+    padding: 10px 15px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.756);
+    margin-bottom: 20px; 
+}
+
+#search input {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+}
+
+#search button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #4b5563;
+    transition: transform 0.2s;
+}
+
+#search button:hover {
+    transform: scale(1.1);
+}
+
+#title {
+    font-size: 1.5rem;
+    color: #374151;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#temp {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(135deg, #7488c0, #646780);
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#temp_value {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 1;
+}
+
+#temp_description {
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+#other_infos {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+
+.info_item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    gap: 10px;
+}
+
+.info_item h2 {
+    font-size: 11px;
+    font-weight: 600;
+    color: #6b7280;
+    margin: 0;
+}
+
+.info_item p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #374151;
+}
+
+
+.fa-temperature-arrow-up { color: #ef4444; }
+.fa-temperature-arrow-down { color: #3b82f6; }
+.material-symbols-outlined { color: #0ea5e9; font-size: 24px; }
+.fa-wind { color: #8b5cf6; }
+
+#alert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
